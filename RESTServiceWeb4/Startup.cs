@@ -29,7 +29,7 @@ namespace RESTServiceWeb4
             services.AddControllers(setup =>
             {
                 setup.ReturnHttpNotAcceptable = true;
-            }).AddXmlDataContractSerializerFormatters();
+            }).AddNewtonsoftJson().AddXmlDataContractSerializerFormatters();
             services.AddSingleton<ICountryRepository, CountryRepository>();
         }
 

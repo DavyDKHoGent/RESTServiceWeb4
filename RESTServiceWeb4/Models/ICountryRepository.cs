@@ -14,5 +14,6 @@ namespace RESTServiceWeb4.Models
         IEnumerable<Country> GetAll(string continent, string capital);
         void RemoveCountry(Country country);
         void UpdateCountry(Country country);
+        bool ExistsCountry(int id);
     }
 }
