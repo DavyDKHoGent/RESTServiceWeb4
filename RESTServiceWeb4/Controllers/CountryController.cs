@@ -89,5 +89,10 @@ namespace RESTServiceWeb4.Controllers
                 return BadRequest();
             }
         }
+        [Route("start")]
+        public IActionResult Start()
+        {
+            return Ok(repo.GetAll());
+        }
     }
 }
